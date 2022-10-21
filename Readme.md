@@ -5,4 +5,4 @@
 **Team Member 2**: Arunachalam S\
 **Team Member 3**:Prasanna M\
 **Industry Mentor Name**: Khusboo\
-**Faculty Mentor Name**: Dr. A. Elakkiya\
+**Faculty Mentor Name**: Dr. A. Elakkiya
