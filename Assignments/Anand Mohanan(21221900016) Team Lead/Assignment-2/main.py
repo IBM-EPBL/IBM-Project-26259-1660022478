@@ -8,19 +8,21 @@ from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
 
 # database details
-# cant create a db because it is not free :(
 
-hostname = "myhostname"
-uid="username"
-password ="password"
-driver="driver name"
-dbname = "db2"
-port="5000"
+
+hostname = "824dfd4d-99de-440d-9991-629c01b3832d.bs2io90l08kqb1od8lcg.databases.appdomain.cloud"
+uid="xpn92020"
+password ="QlmHgbYgGML4RfRQ"
+driver="{IBM DB2 ODBC DRIVER}"
+dbname = "bludb"
+port="30119"
 protocol = "TCPIP"
 
 dsn=("DRIVER={0};""DATABASE={1};""HOSTNAME={2};""PORT={3};""PROTOCOL={4};""UID={5};""PWD={6};").format(driver,dbname,hostname,port,protocol,uid,password)
+
+print(dsn)
 try:
-    db = DB2.connect(dsn,"","")
+    conn = ibm_db.connect(dsn,'','')
     print("Connected to database")
 except:
     print("Unable to connect")
